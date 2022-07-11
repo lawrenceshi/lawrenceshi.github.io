@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="乐乐网站.png">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+<meta charset="UTF-8">
+
+
+</head>
+<title>
+This is the program written by my father and I
+</title>
+
+<p>
+
+<a href="index(英语).html"> 首页 </a>
+
+</p>
+<p>
+The following program is written by my father and I
+</p>
+
+<p>
+This is the first, program name: delete word.py
+</p>
+  <pre><code class="python">
+    import os
+
+print('请输入你想删的文件的数')
+x = input()
+x=int(x)
+#以下是删除文件夹的程序
+for a in range(x):
+	filename = '工作%s.doc'%(a+1)
+	if(os.path.exists(filename)):
+		os.remove( filename )
+	else:
+		print('%s 这个文件不存在在'%(filename))
+
+  </code></pre>
+  
+ <p>
+This is the second, program name: build word.py
+ </p>
+  <pre><code class="python">
+print('请输入你想建的文件的数')
+x = input()
+x=int(x)
+#以下是新建文件夹的程序
+for a in range(x):
+	f = open('工作%s.doc'%(a+1) , 'w')
+	f.close()
+ </code></pre>
+ <p>
+This is the third, program name: Select.py
+ </p>
+ <pre><code class="python">
+   print('请输入你的名字')
+x = input()
+
+if x == '乐乐':
+	print('主人你好!') 
+elif x == '石浩':
+	print('主人的爸爸你好!') 
+elif x == '章海霞':
+	print('主人的妈妈你好!') 
+elif x == '天天':
+	print('主人的弟弟你好!') 
+else:
+	print('我不认识你!') 
+</code></pre>
+<p>
+This is the fourth, program name: number.py
+  </p>
+ <pre><code class="python">
+   print('请输入想数到的数字')
+x = input()
+x = int(x)
+a = 0
+for i in range(x):
+	a = a+1
+	print(a)
+ </code></pre>
+ <p>
+This is the fifth program name: subtraction.py
+ </p>
+ <pre><code class="python">
+   print('请输入被减数')
+x= input()
+x= int(x)
+print('请输入减数')
+y=input()
+y=int(y)
+
+if x<y:
+	print('减数大于被除数，程序不执行')
+	exit()
+
+a=x-y
+print('%s-%s=%s'%(x,y,a))    
+ 
+ </code></pre>
+<p>
+This is the sixth program name: addition formula.py
+<p/>
+ <pre><code class="python">
+     import time
+
+print('请输入想加到的数字')
+n = input()
+n= int(n)
+
+t1 = time.time()
+
+x=(1+n)*n/2
+x=int(x)
+print("从1加到%s等于%s"%(n,x))
+
+t2 = time.time()
+print("Time consumed is working: %s second "%(t2 - t1) )
+
+ </code></pre>
+ <p>
+
+这是第七个,程序名：除法.py
+This is the seventh program name: Division.py
+</p>
+  <pre><code class="python">
+print('请输入被除数')
+x= input()
+x= int(x)
+print('请输入除数')
+y=input()
+y=int(y)
+a = x//y
+b=x%y
+if b!=0:
+	print('%s/%s=%s......%s'%(x,y,a,b)) 
+else:
+	print('%s/%s=%s'%(x,y,a))
+	
+</code></pre>
+<p>
+This is the eighth, program name: multiplication.py
+<p/>
+ <pre><code class="python">
+print('请输入第一个乘数')
+x= input()
+x= int(x)
+print('请输入第二个乘数')
+y=input()
+y=int(y)
+a = x*y
+print('%s*%s=%s'%(x,y,a)) 
+</code></pre>
+
+</html>
